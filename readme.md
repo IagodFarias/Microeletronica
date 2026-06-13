@@ -26,9 +26,6 @@ O objetivo deste espaço é documentar minha evolução técnica, centralizar re
 ---
 
 ## 📂 Estrutura do Repositório
-
-Como este repositório é vivo, os diretórios estão organizados da seguinte forma:
-
 ```text
 📦 microeletronica-estudos
  ┣ 📂 projects/              # Projetos práticos, códigos HDL e testbenches
