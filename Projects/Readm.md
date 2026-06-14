@@ -21,7 +21,7 @@ e os pinos de I/O distribuídos pelas bordas.
      (ou no caminho que preferir) e descomente a linha abaixo: -->
 <!-- ![Layout roteado da ULA no Innovus](docs/layout.png) -->
 
-> _Imagem do layout: 'docs/Layout.jpg' (a adicionar)_
+> _Imagem do layout:`docs/Layout.jpg`
 
 ---
 
