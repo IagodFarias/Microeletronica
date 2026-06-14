@@ -1,0 +1,5 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(13Jun2026:18:34:16):( xrun ../rtl/alu.sv ../tb/tb_alu.sv -access +rwc )&&(./xcelium.d/env.d/env.history.13Jun2026_18_34_16)

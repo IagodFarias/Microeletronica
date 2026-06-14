@@ -1,0 +1,89 @@
+[06/13 20:13:19      0s] 
+[06/13 20:13:19      0s] Cadence Innovus(TM) Implementation System.
+[06/13 20:13:19      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[06/13 20:13:19      0s] 
+[06/13 20:13:19      0s] Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+[06/13 20:13:19      0s] Options:	-files innovus.tcl 
+[06/13 20:13:19      0s] Date:		Sat Jun 13 20:13:19 2026
+[06/13 20:13:19      0s] Host:		semb (x86_64 w/Linux 4.18.0-553.120.1.el8_10.x86_64) (20cores*28cpus*Intel(R) Core(TM) i7-14700K 33792KB)
+[06/13 20:13:19      0s] OS:		Rocky Linux release 8.10 (Green Obsidian)
+[06/13 20:13:19      0s] 
+[06/13 20:13:19      0s] License:
+[06/13 20:13:19      0s] 		[20:13:19.201601] Configured Lic search path (21.01-s002): 5280@192.168.0.10
+
+[06/13 20:13:19      0s] 		invs	Innovus Implementation System	21.1	checkout succeeded
+[06/13 20:13:19      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[06/13 20:13:28      6s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+[06/13 20:13:30      7s] @(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+[06/13 20:13:30      7s] @(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+[06/13 20:13:30      7s] @(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+[06/13 20:13:30      7s] @(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+[06/13 20:13:30      7s] @(#)CDS: CPE v21.15-s076
+[06/13 20:13:30      7s] @(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+[06/13 20:13:30      7s] @(#)CDS: OA 22.60-p076 Wed May 18 13:45:29 2022
+[06/13 20:13:30      7s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[06/13 20:13:30      7s] @(#)CDS: RCDB 11.15.0
+[06/13 20:13:30      7s] @(#)CDS: STYLUS 21.12-s013_1 (08/15/2022 08:25 PDT)
+[06/13 20:13:30      7s] @(#)CDS: SystemPlanner-21.15Rel-8720 (21.15) (2022-08-22 18:31:54+0800)
+[06/13 20:13:30      7s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_1640437_semb_mateusmaia45_QNNW8s.
+
+[06/13 20:13:30      7s] Change the soft stacksize limit to 0.2%RAM (95 mbytes). Set global soft_stack_size_limit to change the value.
+[06/13 20:13:32      8s] 
+[06/13 20:13:32      8s] **INFO:  MMMC transition support version v31-84 
+[06/13 20:13:32      8s] 
+[06/13 20:13:32      8s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[06/13 20:13:32      8s] <CMD> suppressMessage ENCEXT-2799
+[06/13 20:13:32      8s] <CMD> getVersion
+[06/13 20:13:32      8s] [INFO] Loading PVS 23.11 fill procedures
+[06/13 20:13:32      8s] Sourcing file "innovus.tcl" ...
+[06/13 20:13:32      8s] <CMD> set init_lef_file {../pdks/freepdk-45nm/rtk-tech.lef ../pdks/freepdk-45nm/stdcells.lef}
+[06/13 20:13:32      8s] <CMD> set init_verilog ../synth/alu_netlist.v
+[06/13 20:13:32      8s] <CMD> set init_top_cell alu
+[06/13 20:13:32      8s] <CMD> set init_mmmc_file mmmc.tcl
+[06/13 20:13:32      8s] <CMD> set init_pwr_net VDD
+[06/13 20:13:32      8s] <CMD> set init_gnd_net VSS
+[06/13 20:13:32      8s] <CMD> init_design
+[06/13 20:13:32      8s] #% Begin Load MMMC data ... (date=06/13 20:13:32, mem=978.4M)
+[06/13 20:13:32      8s] 
+[06/13 20:13:32      8s] Usage: create_analysis_view [-help] -constraint_mode <modeName> -delay_corner <dcCornerObj> -name <viewName>
+[06/13 20:13:32      8s] 
+[06/13 20:13:32      8s] **ERROR: (IMPTCM-48):	"-setup_mode" is not a legal option for command "create_analysis_view". Either the current option or an option prior to it is not specified correctly.
+**ERROR: (IMPSYT-6692):	Invalid return code while executing 'innovus.tcl' was returned and script processing was stopped. Review the following error in 'innovus.tcl' then restart.
+[06/13 20:13:32      8s] Error info: innovus.tcl: 
+[06/13 20:13:32      8s]     while executing
+[06/13 20:13:32      8s] "error "$ret""
+[06/13 20:13:32      8s]     (procedure "::init_design::process_view_def" line 89)
+[06/13 20:13:32      8s]     invoked from within
+[06/13 20:13:32      8s] "::init_design::process_view_def $::init_mmmc_file"
+[06/13 20:13:32      8s]     (procedure "init_design" line 222)
+[06/13 20:13:32      8s]     invoked from within
+[06/13 20:13:32      8s] "init_design"
+[06/13 20:13:32      8s]     (file "innovus.tcl" line 14)
+[06/13 20:13:32      8s]     invoked from within
+[06/13 20:13:32      8s] "::se_source_orig innovus.tcl"
+[06/13 20:13:32      8s]     ("uplevel" body line 1)
+[06/13 20:13:32      8s]     invoked from within
+[06/13 20:13:32      8s] "uplevel [concat ::se_source_orig $args]"
+[06/13 20:13:32      8s]     (procedure "source" line 188)
+[06/13 20:13:32      8s]     invoked from within
+[06/13 20:13:32      8s] "source innovus.tcl"
+[06/13 20:13:32      8s]     ("uplevel" body line 1)
+[06/13 20:13:32      8s]     invoked from within
+[06/13 20:13:32      8s] "uplevel #0 source innovus.tcl"
+[06/13 20:13:32      8s]     ("eval" body line 1)
+[06/13 20:13:32      8s]     invoked from within
+[06/13 20:13:32      8s] "eval {uplevel #0 source innovus.tcl}"
+[06/13 20:13:32      8s]     (in namespace inscope "::" script line 1)
+[06/13 20:13:32      8s]     invoked from within
+[06/13 20:13:32      8s] "namespace inscope :: eval "uplevel #0 source $fileName"".
+[06/13 20:13:32      8s] <CMD> win
+[06/13 20:14:53     10s] 
+[06/13 20:14:53     10s] *** Memory Usage v#1 (Current mem = 1063.656M, initial mem = 483.887M) ***
+[06/13 20:14:53     10s] 
+[06/13 20:14:53     10s] *** Summary of all messages that are not suppressed in this session:
+[06/13 20:14:53     10s] Severity  ID               Count  Summary                                  
+[06/13 20:14:53     10s] ERROR     IMPSYT-6692          1  Invalid return code while executing '%s'...
+[06/13 20:14:53     10s] ERROR     IMPTCM-48            1  "%s" is not a legal option for command "...
+[06/13 20:14:53     10s] *** Message Summary: 0 warning(s), 2 error(s)
+[06/13 20:14:53     10s] 
+[06/13 20:14:53     10s] --- Ending "Innovus" (totcpu=0:00:10.5, real=0:01:34, mem=1063.7M) ---

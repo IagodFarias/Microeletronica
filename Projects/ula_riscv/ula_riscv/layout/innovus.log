@@ -1,0 +1,70 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+Options:	-files innovus.tcl 
+Date:		Sat Jun 13 20:13:19 2026
+Host:		semb (x86_64 w/Linux 4.18.0-553.120.1.el8_10.x86_64) (20cores*28cpus*Intel(R) Core(TM) i7-14700K 33792KB)
+OS:		Rocky Linux release 8.10 (Green Obsidian)
+
+License:
+		[20:13:19.201601] Configured Lic search path (21.01-s002): 5280@192.168.0.10
+
+		invs	Innovus Implementation System	21.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (95 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+[INFO] Loading PVS 23.11 fill procedures
+Sourcing file "innovus.tcl" ...
+<CMD> set init_lef_file {../pdks/freepdk-45nm/rtk-tech.lef ../pdks/freepdk-45nm/stdcells.lef}
+<CMD> set init_verilog ../synth/alu_netlist.v
+<CMD> set init_top_cell alu
+<CMD> set init_mmmc_file mmmc.tcl
+<CMD> set init_pwr_net VDD
+<CMD> set init_gnd_net VSS
+<CMD> init_design
+#% Begin Load MMMC data ... (date=06/13 20:13:32, mem=978.4M)
+
+Usage: create_analysis_view [-help] -constraint_mode <modeName> -delay_corner <dcCornerObj> -name <viewName>
+
+**ERROR: (IMPTCM-48):	"-setup_mode" is not a legal option for command "create_analysis_view". Either the current option or an option prior to it is not specified correctly.
+**ERROR: (IMPSYT-6692):	Invalid return code while executing 'innovus.tcl' was returned and script processing was stopped. Review the following error in 'innovus.tcl' then restart.
+Error info: innovus.tcl: 
+    while executing
+"error "$ret""
+    (procedure "::init_design::process_view_def" line 89)
+    invoked from within
+"::init_design::process_view_def $::init_mmmc_file"
+    (procedure "init_design" line 222)
+    invoked from within
+"init_design"
+    (file "innovus.tcl" line 14)
+    invoked from within
+"::se_source_orig innovus.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel [concat ::se_source_orig $args]"
+    (procedure "source" line 188)
+    invoked from within
+"source innovus.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 source innovus.tcl"
+    ("eval" body line 1)
+    invoked from within
+"eval {uplevel #0 source innovus.tcl}"
+    (in namespace inscope "::" script line 1)
+    invoked from within
+"namespace inscope :: eval "uplevel #0 source $fileName"".
+<CMD> win
+
+*** Memory Usage v#1 (Current mem = 1063.656M, initial mem = 483.887M) ***
+*** Message Summary: 0 warning(s), 2 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:10.5, real=0:01:34, mem=1063.7M) ---

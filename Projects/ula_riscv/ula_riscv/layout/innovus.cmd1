@@ -1,0 +1,58 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Sat Jun 13 20:15:22 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+#@(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+#@(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+#@(#)CDS: CPE v21.15-s076
+#@(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+set init_lef_file {../pdks/freepdk-45nm/rtk-tech.lef ../pdks/freepdk-45nm/stdcells.lef}
+set init_verilog ../synth/alu_netlist.v
+set init_top_cell alu
+set init_mmmc_file mmmc.tcl
+set init_pwr_net VDD
+set init_gnd_net VSS
+init_design
+floorPlan -site FreePDK45_38x28_10R_NP_162NW_34O -r 1.0 0.70 5 5 5 5
+globalNetConnect VDD -type pgpin -pin VDD -inst *
+globalNetConnect VSS -type pgpin -pin VSS -inst *
+addRing -nets {VDD VSS} -type core_rings -layer {top metal9 bottom metal9 left metal10 right metal10} -width 0.8 -spacing 0.8 -offset 0.5
+sroute -nets {VDD VSS}
+setPlaceMode -place_global_place_io_pins true
+place_design
+optDesign -preCTS
+routeDesign
+optDesign -postRoute
+win
+zoomBox -55.37650 -17.70050 187.47150 62.02050
+zoomBox -35.30000 -3.61850 140.15900 53.98050
+zoomBox -25.02650 1.59100 124.11350 50.55000
+zoomBox -9.38600 9.83950 98.36850 45.21250
+zoomBox 1.64600 15.98450 79.49950 41.54200
+zoomBox 12.25300 22.24150 60.06550 37.93700
+zoomBox 16.93700 25.00450 51.48250 36.34500
+zoomBox 23.55000 29.07950 38.87850 34.11150
+zoomBox 24.78750 29.98250 35.86350 33.61850
+zoomBox 25.68200 30.63550 33.68450 33.26250
+pan -0.64000 5.68200
+pan -0.72850 6.68100
+zoomBox 24.77200 31.88250 31.57450 34.11550
+zoomBox 25.16200 32.01850 30.94400 33.91650
+zoomBox 24.52050 31.85300 31.32250 34.08600
+zoomBox 23.76450 31.65850 31.76700 34.28550
+zoomBox 22.87550 31.42950 32.29000 34.52000
+zoomBox 21.82950 31.16000 32.90550 34.79600
+zoomBox 19.15050 30.47000 34.48150 35.50300
+zoomBox 17.44650 30.03150 35.48350 35.95250
+zoomBox 13.08400 28.90850 38.04950 37.10400
+zoomBox 3.20550 26.36600 43.85900 39.71150

@@ -1,0 +1,45 @@
+xrun(64): 24.09-s001: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.09-s001: Started on Jun 13, 2026 at 18:34:15 -03
+xrun
+	../rtl/alu.sv
+	../tb/tb_alu.sv
+	-access +rwc
+file: ../rtl/alu.sv
+	module worklib.alu:sv
+		errors: 0, warnings: 0
+file: ../tb/tb_alu.sv
+	module worklib.tb_alu:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		tb_alu
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.alu:sv <0x798fc998>
+			streams:   2, words:  1547
+		worklib.tb_alu:sv <0x6ca7763a>
+			streams:   6, words:  7363
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 2       2
+		Registers:               7       7
+		Scalar wires:            3       -
+		Vectored wires:          5       -
+		Always blocks:           1       1
+		Initial blocks:          1       1
+		Cont. assignments:       1       1
+		Pseudo assignments:      5       -
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.tb_alu:sv
+Loading snapshot worklib.tb_alu:sv .................... Done
+xcelium> source /home/tools/cadence/installs/XCELIUM2209/tools/xcelium/files/xmsimrc
+xcelium> run
+Iniciando Testes da ULA RISC-V...
+Simulação concluída!
+Simulation complete via $finish(1) at time 40 NS + 0
+../tb/tb_alu.sv:44         $finish;
+xcelium> exit
+TOOL:	xrun(64)	24.09-s001: Exiting on Jun 13, 2026 at 18:34:16 -03  (total: 00:00:01)

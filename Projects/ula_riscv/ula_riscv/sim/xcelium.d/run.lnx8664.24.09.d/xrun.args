@@ -1,0 +1,8 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+../rtl/alu.sv
+../tb/tb_alu.sv
+-access
++rwc

@@ -1,0 +1,40 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 21.10-p002_1, built Fri Aug 20 06:13:13 PDT 2021
+Options: -files run_synthesis.tcl 
+Date:    Sat Jun 13 18:38:19 2026
+Host:    semb (x86_64 w/Linux 4.18.0-553.120.1.el8_10.x86_64) (20cores*28cpus*1physical cpu*Intel(R) Core(TM) i7-14700K 33792KB) (48879784KB)
+PID:     1552501
+OS:      Rocky Linux release 8.10 (Green Obsidian)
+
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (6 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source run_synthesis.tcl
+#@ Begin verbose source ./run_synthesis.tcl
+@file(run_synthesis.tcl) 3: set_attr library {/caminho/para/seu/pdk/lib/asap7_sc7p5t_28.lib}
+Error   : The tool is running in common ui mode. [TUI-509] [::unknown]
+        : Command 'set_attr' is a legacy ui command.
+        : Use set_db/get_db instead or do set_db common_ui false at start of the run.
+#@ End verbose source ./run_synthesis.tcl
+
+Encountered problems processing file: run_synthesis.tcl
+WARNING: This version of the tool is 1758 days old.
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 81s, ST: 3s, FG: 3s, CPU: 2.0%}, MEM {curr: 1.0G, peak: 1.0G, phys curr: 0.3G, phys peak: 0.3G}, SYS {load: 0.8, cpu: 28, total: 46.6G, free: 24.6G}
+@genus:root: 2> cd ..
+@genus:root: 3> exit
+Normal exit.

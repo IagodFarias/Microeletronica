@@ -1,0 +1,33 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Sat Jun 13 20:56:40 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+#@(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+#@(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+#@(#)CDS: CPE v21.15-s076
+#@(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+win
+restoreDesign alu_final.enc alu
+is_common_ui_mode
+restoreDesign /home/mateusmaia45/Documentos/candece_iago/projetos_iago/ula_riscv/layout/alu_final.enc.dat alu
+zoomBox 7.06300 5.88850 54.47750 51.99300
+zoomBox 17.13750 14.90350 46.25600 43.21750
+zoomBox 4.60300 5.53650 52.01800 51.64150
+zoomBox -7.87350 -3.78750 57.75300 60.02600
+zoomBox -10.39000 -8.50100 66.81750 66.57350
+setLayerPreference hinst -isVisible 0
+setLayerPreference guide -isVisible 0
+setLayerPreference fence -isVisible 0
+setLayerPreference floating -isVisible 0
+setLayerPreference region -isVisible 0
+setLayerPreference partition -isVisible 0
