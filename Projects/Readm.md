@@ -17,11 +17,7 @@ Layout roteado da ULA no Innovus (FreePDK45 / Nangate 45nm). O core de
 roteamento aparece no centro, com os anéis de alimentação (VDD/VSS) ao redor
 e os pinos de I/O distribuídos pelas bordas.
 
-<!-- Adicione a imagem do layout aqui. Salve a captura de tela em docs/layout.png
-     (ou no caminho que preferir) e descomente a linha abaixo: -->
-<!-- ![Layout roteado da ULA no Innovus](docs/layout.png) -->
-
-> _Imagem do layout:`docs/Layout.jpg`
+![Layout roteado da ULA no Innovus](docs/Layout.jpg)
 
 ---
 
